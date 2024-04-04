@@ -2,12 +2,11 @@ public class Main {
     public static void main(String[] args) {
         Airplane o1 = new Airplane("TU-140", 450, 100);
         Airplane o2 = new Airplane("AN-126", 550, 140);
-        System.out.println(o1);
-        System.out.println(o2);
 
-
-
-
+        Airplane[] airplanes = {o1, o2};
+        for (int i = 0; i < airplanes.length; i++) {
+            System.out.println(airplanes[i]);
+        }
     }
 }
 class Airplane {
